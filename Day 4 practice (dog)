@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOg Practice (Day 4)</title>
+    <style>
+        ol a {
+            text-decoration: none;
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        footer a,
+        footer p {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: olive;
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #fafafa;
+            box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        th {
+            text-align: left;
+        }
+
+        table,
+        td,
+        th {
+            padding: 12px;
+            border: 2px solid black;
+            font-size: 1em;
+        }
+
+        p {
+            width: 85%;
+            margin: 30px auto;
+            line-height: 1.3;
+            font-size: 1.2rem;
+            word-spacing: 5px;
+        }
+        .yt_link{
+            border: 1px solid black;
+            padding: 1rem;
+
+        }
+        .yt_link a{
+            text-decoration: none;
+            color: black;
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Labrador Retriever</h1>
+    </header>
+
+    <div style="text-align: center;">
+        <img style="border-radius: 20px;"
+            src="https://imgs.search.brave.com/9o-wkAy2eiOlI83wg6AMnhvh0aPWNc--BrkMGNl6i7w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/NS8wNy8xMC80OC9o/dXNreS0zMzgwNTQ4/XzEyODAuanBn"
+            alt="Error">
+        <ol class="orderList" style="text-align: left;">
+            <li><a href="#">Main information</a></li>
+            <li><a href="#">Description</a></li>
+            <li><a href="#">Origins</a></li>
+            <li><a href="#">Temperament</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Appearance around the world</a></li>
+        </ol>
+    </div>
+    <h3>Main information</h3>
+    <table>
+        <tr>
+            <th>Breed Name:</th>
+            <td>Golden Retriever</td>
+        </tr>
+        <tr>
+            <th>Origin:</th>
+            <td>Scotland</td>
+        </tr>
+        <tr>
+            <th>Life Span:</th>
+            <td>9 - 11 years</td>
+        </tr>
+        <tr>
+            <th>Size:</th>
+            <td>Large</td>
+        </tr>
+        <tr>
+            <th>Coat Type:</th>
+            <td>Double, water-resistant</td>
+        </tr>
+        <tr>
+            <th>Traits:</th>
+            <td>Friendly and Intelligent</td>
+        </tr>
+        <tr>
+            <th>Exercise Needs:</th>
+            <td>High</td>
+        </tr>
+        <tr>
+            <th>Trainability:</th>
+            <td>Very Easy</td>
+        </tr>
+    </table>
+
+    <h3>Description</h3>
+    <p>The Labrador Retriever, or just Labrador, is a large breed of retriever-gun dog. The Labrador is
+        one of the most popular breeds of dog in Canada, the United Kingdom and the United States.
+        A favourite disability assistance breed in many countries, Labradors are frequently trained to aid
+        those with blindness or autism, act as a therapy dog, or perform screening and detection work
+        for law enforcement and other official agencies.
+        <br>Additionally, they are prized as sporting and hunting dogs.
+    </p>
+
+    <div class="yt_link">
+
+    </div>
+
+
+    <footer>
+        <p>&copy; </p>
+        <a href="#">Here is my GitHub page</a>
+        <br>
+        <a href="#">Yes, it looks like promotion.. but also let me put </a>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
