@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="Submit-Form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name1" name="name">
+        <button type="submit">Submit</button>
+
+        <br>
+        <br>
+
+        <label for="om">Username:</label>
+        <input type="text" id="username" name="username" 
+        required>
+
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <br>
+        <br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+
+        <br>
+
+        <label>Choose your favorite color:</label>
+        <input type="radio" id="red" name="color" value="red">
+        <label for="red">Red</label>
+        <input type="radio" id="blue" name="color" value="blue">
+        <label for="blue">Blue</label>
+
+        <br>
+
+        <label for="city">Select your city:</label>
+        <select name="city" id="city">
+            <option value="nyc">New York</option>
+            <option value="la">Los Angeles</option>
+            <option value="sf">San Francisco</option>
+        </select>
+
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="4"
+        cols="50"></textarea>
+
+        <br>
+
+        <label for="file">Upload your resume:</label>
+        <input type="file" id="file" name="resume">
+
+        <br>
+
+        <button type="submut">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Hello!')">Click Me</button>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="last-name">Last Name:</label>
+            <input type="last-name" id="last-name" name="last-name">
+        </fieldset>
+
+        <br>
+
+        <label for="shivam">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" required>
+
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" nax="10" required>
+
+        <br>
+
+        <form action="submit_form.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <br>
+
+        <!--Invisible Input Field-->
+        <input type="hidden" name="user_id" value="12345">
+
+        <br>
+
+        <!--Styling Forms-->
+        <style>
+            input[type="text"], input[type="email"], input[type="password"]{
+                padding: 10px;
+                margin: 5px;
+                width: 100%;
+                border: 1px solid #ccc;
+            }
+            button{
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #45a049;
+            }
+        </style>
+
+
+
+    </form>
+    <br>
+    <h2>Form of Login</h2>
+    <form action="login.php" method="POST">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+        <button type="submit">Login</button>
+    </form>
+    <form action="register.php" method="POST">
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" name="email" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <br><br>
+    </form>
+    
+</body>
+</html>
